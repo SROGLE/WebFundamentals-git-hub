@@ -6,9 +6,9 @@ Fonts are separated by a & */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gowun+Batang:wght@400;700&display=swap');
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #3ACFC8   ;
-  --secondary-color: #E3D888 ;
-  --accent1-color: #EDDFEF;
+  --primary-color: #EDDFEF;
+  --secondary-color: #820263;
+  --accent1-color: #727D71;
   --accent2-color: #757780;
 
   /* change the values below to your chosen font(s) */
