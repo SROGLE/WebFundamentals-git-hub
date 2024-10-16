@@ -1,0 +1,58 @@
+body{
+    background-color: lightgreen;
+}
+#wrapper{
+    width: 75%;
+    margin: 0 auto;
+    background-color: black;
+    color: lightgreen;
+    padding: 30px;
+}
+.qbox1 {
+    font-family:fantasy;
+    font-size: 30px;
+    font-style: inherit;
+    margin: 20px;
+    border: 5px outset lightgreen;
+    padding: 10px 30px;
+    width: 500px;
+}
+.qbox2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-style:initial;
+    margin: 20px;
+    border: 5px inset lightgreen;
+    padding: 10px 30px;
+    width: 500px;
+
+}
+.qbox3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-style: oblique;
+    margin: 20px;
+    border: 5px double lightgreen;
+    padding: 10px 30px;
+    width: 500px;
+}
+.qbox4{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    font-style: italic;
+    margin: 20px;
+    border: 5px groove lightgreen;
+    padding: 10px 30px;
+    width: 500px;
+    
+    
+}
+.qbox1,.qbox2,.qbox3,.qbox4{
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+hr{
+    height: 5px;
+    background-color: lightgreen;
+    border: none;
+}
