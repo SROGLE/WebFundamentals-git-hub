@@ -28,3 +28,15 @@ hr{
     background-color: darkred;
     border: none;
 }
+nav a{
+    background: black;
+    color: mediumseagreen;
+}
+nav a:hover{
+    color: white;
+}
+.navhr {
+    height: 5px;
+    background-color: mediumseagreen;
+    border: none;
+}
