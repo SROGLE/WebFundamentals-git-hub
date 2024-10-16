@@ -1,8 +1,9 @@
 img{
     width: 40%;
-    background-color: mediumspringgreen;
-    margin: 0 auto;
-    padding: 20px;
+    background-color: mediumseagreen;
+    margin: 50px 30%;
+    padding: 40px;
+    border: groove 3px black;
 }
 p{
     padding: 20px;
@@ -19,24 +20,27 @@ h1{
     color: mediumspringgreen;
 }
 hr{
-    height: 5px;
-    background-color: darkred;
+    height: 10px;
+    background-color: black;
     border: none;
 }
 .headhr{
     height: 5px;
-    background-color: darkred;
+    background-color: mediumspringgreen;
     border: none;
 }
+
 nav a{
     background: black;
     color: mediumseagreen;
+    text-decoration: none;
 }
 nav a:hover{
     color: white;
 }
 .navhr {
-    height: 5px;
+    height: 3px;
     background-color: mediumseagreen;
     border: none;
+    margin: 2px auto;
 }
