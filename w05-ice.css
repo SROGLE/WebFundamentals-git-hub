@@ -1,0 +1,24 @@
+.rounded-circles {
+    display: flex; /* This will make the images align horizontally */
+    gap: 25%; /* Optional: Adds spacing between the images */
+    background: grey;
+}
+
+.rounded-circles img {
+    width: 200px; /* Set the width of each image */
+    height: 200px; /* Set the height of each image */
+    margin: 30px auto;
+    border-radius: 50%; /* Makes the images circular */
+    border: 10px solid darkgrey; /* Creates the circular border */
+    object-fit: cover; /* Ensures the image fits within the circle without distortion */
+
+    
+}
+.circle-image img {
+    width: 100%; /* Makes the image span the full width of the screen */
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Removes any extra space below the image */
+}
+body{
+    margin: 0 auto;
+}
