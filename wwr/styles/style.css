@@ -1,6 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gowun+Batang:wght@400;700&display=swap');
+
 body {
     background: greenyellow;
     background-color: #EDDFEF;
+    font-family:"Playwrite DE Grund";
+    margin: 0;
+    padding: 0; 
+}
+h2{
+    margin: 0;
 }
 header{
     background-color: #EDDFEF;
@@ -14,6 +23,10 @@ nav a:hover{
     background-color: #EDDFEF;
     color:#820263;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover{
     background-color: #727D71;
@@ -28,6 +41,7 @@ nav a {
   background-color: white;
   color: #757780;
   text-decoration: none;
+  padding: 35px;
 }
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
@@ -44,6 +58,8 @@ main section {
 }
 .msg{
     background-color: #EDDFEF;
+    line-height: 1.5em;
+    padding: 35px;
 }
 footer{
     background-color: #727D71;
@@ -51,6 +67,8 @@ footer{
     text-shadow: 
     2px 2px 5px rgba(0, 0, 0, 0.8),   /* Black shadow, closer */
     -2px -2px 5px rgba(255, 255, 255, 0.8); /* White shadow, farther */
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer a{
     background-color: #EDDFEF;
@@ -66,6 +84,9 @@ footer p a:hover{
 footer a:hover{
     background-color: #820263;
 }
+footer .social img{
+    padding-top: 15px;
+}
 h4{
     background-color: #820263;
     color: #EDDFEF;
@@ -74,14 +95,20 @@ h4{
 .msg p{
     background-color: #727D71;
     color: #820263;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 .msg h2{
     background-color: #727D71;
     color: black;
+    font-family:"Playwrite DE Grund"; 
 }
 .home-title{
     background-color: #727D71;
     color: black;
+    font-family: "Bebas Neue";
+    font-size: 2em;
+    margin-top: 10px;
 }
 .icon{
     width: 80px;
@@ -91,4 +118,16 @@ h4{
 }
 #hero-img{
     width: 100%;
+}
+#logo_link{
+    padding-top: 5px;
+}
+.river-cards, .camping-card, .rapid-card{
+    margin: 200px 0;
+}
+main section img{
+    box-sizing: border-box;
+}
+.card-img{
+    border: 10px solid #727D71;
 }
