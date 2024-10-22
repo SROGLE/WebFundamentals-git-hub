@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gowun+Batang:wght@400;700&display=swap');
 body {
-    background: greenyellow;
+    background: black;
     background-color: #EDDFEF;
     font-family:"Playwrite DE Grund";
     margin: 0;
@@ -63,7 +63,7 @@ main section {
 }
 footer{
     background-color: #727D71;
-    color: #820263;
+    color: #EDDFEF;
     text-shadow: 
     2px 2px 5px rgba(0, 0, 0, 0.8),   /* Black shadow, closer */
     -2px -2px 5px rgba(255, 255, 255, 0.8); /* White shadow, farther */
