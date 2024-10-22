@@ -13,7 +13,9 @@ p{
 }
 body{
     background: #333333;
-    
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
 }
 h1{
     background-color: black;
