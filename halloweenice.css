@@ -2,44 +2,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bilbo&family=Creepster&family=Gowun+Batang:wght@400;700&family=MedievalSharp&family=Nosifer&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bilbo&family=Creepster&family=Gowun+Batang:wght@400;700&family=Henny+Penny&family=MedievalSharp&family=Nosifer&display=swap');
 
-
-li:hover{
-    background-color: black;
-    width: 300px;
-    padding: 20px;
-    color: orange;
-    list-style-position: inside;
+ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
 }
 li{
     list-style-position: inside;
-    width: 300px;
-    padding: 20px;
+    width: 100px;
     margin: 0 auto;
     font-family: "Nosifer", sans-serif;
     font-size: 25px;
+    text-shadow: 
+        2px 2px 0 rgba(255, 255, 255, 0.8), /* White shadow */
+        5px 5px 3px rgba(249, 249, 249, 0.986); 
+    
+  
+
     
 }
+#wrapper{
+    width: 75%;
+    margin: 0 auto;
+    background-color: black;
+    color: orange;
+    padding: 30px;
+    box-sizing: border-box;
+    transform: scale(1.2); /* Adjust the scale factor */
+    transform-origin: top; /* Adjusts the origin point for scaling */
+}
 header{
-    background: white;
+    
     width: 100%;
     margin: 0 auto;
 
 }
-h1{
-    background: black;
+h1 {
+    background: black; /* Fills the background with black */
     font-size: 5rem;
-    width: 16rem;
+    width: 25rem;
     margin: 0 auto;
     color: orange;
-    padding: 5rem;
-    margin: 0 auto;
+    text-shadow: 
+        2px 2px 0 rgba(255, 255, 255, 0.8), /* White shadow */
+        5px 5px 3px rgba(249, 249, 249, 0.986); /* Existing shadow */
+    padding: 2rem 0; /* Adjust padding for space above and below */
     font-family: "Creepster", system-ui;
+    border-radius: 50%; /* Makes the element circular */
+    border: 20px solid yellow; /* Creates the circular border */
+    background-image: url('a5ea24df52924c249ca57156f1a6f7ff.jpg');
+    background-size: 50%; /* Adjust as needed for the size of the image */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    display: flex; /* Allows for centering content */
+    flex-direction: column; /* Stacks the text vertically */
+    align-items: center; /* Center content horizontally */
+    box-shadow: 0 0 15px rgba(255, 255, 0, 0.8); /* Yellow shadow for border */
+transition: all 0.3s ease; /* Smooth transition */
+}
+h1:hover {
+    transform: scale(1.1); /* Scale up */
+    color: orange; /* Change text color */
+    box-shadow: 0 0 25px rgba(255, 255, 0, 1); /* More pronounced shadow */
+    background-color: rgba(0, 0, 0, 0.8); /* Slightly change background */
+}
+
+h1 span {
+    margin-top: -40px; /* Adjust this to move "Happy" closer to the top */
+
+}
+
+h1 .halloween {
+    margin-top: 100px; /* Pushes "Halloween" down */
+}
+.skeleton{ 
+    width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 10px solid yellow;
+    box-shadow: 0 0 15px rgba(255, 255, 0, 0.8);
+
 }
 img{
     width: 500px;
     height: auto;
     display: block;
     margin: 0 auto;
+    border: 10px solid yellow;
+    box-shadow: 0 0 15px rgba(255, 255, 0, 0.8);
 }
 h2{
     background: black;
@@ -55,13 +108,13 @@ h2{
 
 }
 p:hover{
-    background: black;
+    background: orange;
 }
 p{
     text-decoration: underline white;
     color: white;
     margin: 20px auto;
-    border: 5px solid black;
+    border: 5px solid orange;
     padding: 10px 30px;
     width: 500px;
     font-family: "Henny Penny", system-ui;
@@ -79,13 +132,22 @@ body{
     background: orange;
     background: orange;
     text-align: center;
-    transform: scale(1.2); /* Adjust the scale factor */
-    transform-origin: top; /* Adjusts the origin point for scaling */
     width: 100%; /* Ensures it covers the full width */
+    user-select: none; /* Prevents text selection */
+    overflow-x: hidden;
 }
 .wrapper{
     transform: scale(1.2); /* Adjust the scale factor */
     transform-origin: top; /* Adjusts the origin point for scaling */
     display: inline-block; /* Keeps the scaling from affecting layout */
     width: 100%; /* Ensures it takes the full width */
+}
+#happyHalloween {
+    transition: transform 0.3s, color 0.3s; /* Add smooth transition */
+}
+
+#happyHalloween:hover {
+    transform: scale(1.1); /* Scale up on hover */
+    color: orange; /* Change color on hover */
+    cursor: pointer; /* Show pointer cursor */
 }
