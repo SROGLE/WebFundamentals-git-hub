@@ -132,11 +132,12 @@ main section img{
     border: 10px solid #727D71;
     transition: transform .5s;
     box-shadow: 5px 5px 10px #6f7364;
-    .card-img:hover{
+}
+.card-img:hover{
         opacity: .6;
         transform: scale(1.1);
-    }
 }
+
 header{
     display: grid;
     grid-template-columns: 150px auto;
