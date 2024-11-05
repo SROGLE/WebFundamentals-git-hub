@@ -15,6 +15,10 @@ nav a:hover{
     background-color: #820263;
     color: black;
 }
+.home-grid{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
 .book, .join{
     background-color: #EDDFEF;
     color:#820263;
@@ -48,6 +52,7 @@ nav a {
 }
 main section {
     text-align: center;
+
 }
 #background {
     height: 725px;
@@ -122,9 +127,7 @@ h4{
 #hero-img{
     width: 100%;
 }
-.river-cards, .camping-card, .rapid-cards{
-    margin: 200px 0;
-}
+
 main section img{
     box-sizing: border-box;
 }
@@ -173,7 +176,7 @@ nav{
 .card-img, .mountains{
     width: 100%;
 }
-.river-cards{
+.rivers-cards{
     grid-column: 2/4;
     grid-row: 2/3;
 }
@@ -181,7 +184,7 @@ nav{
     grid-column: 5/7;
     grid-row: 2/3;
 }
-.rapid-cards{
+.rapids-cards{
     grid-column: 8/10;
     grid-row: 2/3;
 }
@@ -191,8 +194,7 @@ nav{
 }
 .mountains{
     grid-column: 2/7;
-    grid-area: 5/8;
-    width: 100%;
+    grid-row: 5/8;
     box-shadow: 5px 5px 10px #6f7364;
 }
 @media screen and (max-width: 900px) {
@@ -200,7 +202,7 @@ nav{
         display: block;
         height: auto;
     }
-}
+
 nav,footer{
     flex-direction: column;
 }
@@ -237,4 +239,5 @@ nav a{
 }
 footer {
     margin-top: 25px;
+}
 }
