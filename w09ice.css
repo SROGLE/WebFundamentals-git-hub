@@ -1,0 +1,109 @@
+/* Reset */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Wrapper styling */
+#wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+}
+
+/* Card styling with Grid */
+.card {
+    display: grid;
+    grid-template-columns: 1fr;  /* Single column layout */
+    grid-template-rows: auto 1fr auto;  /* Specific row sizes for each section */
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Image styling */
+.card-image {
+    width: 100%;
+    height: auto;
+    grid-row: 1;  /* First row for the image */
+}
+
+/* Content section styling */
+/* Content section styling */
+/* Content section styling */
+.card-content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;  /* Remove gap between the date and title */
+    grid-row: 2;  /* Keep in the same grid position */
+    text-align: center;
+}
+
+/* Title styling */
+.title {
+    font-size: 2em;  /* Increase font size for the title */
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0;  /* Ensure there’s no space above the title */
+    margin-bottom: 0;  /* Remove any margin below the title */
+}
+
+/* Date styling */
+.date {
+    color: #6495ED;
+    font-size: 0.9em;  /* Decrease the font size of the date */
+    text-align: center;
+    margin-bottom: 4px;  /* Small space between the date and the title */
+}
+
+.description {
+    font-family: 'Merriweather', serif;  /* Use Merriweather or any serif font */
+    color: #555;
+    font-size: 1em;
+    line-height: 1.5;
+    text-align: center;  /* Center the text */
+    margin-top: 8px;
+}
+
+/* Footer styling */
+/* Footer styling */
+.card-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* Three columns for footer */
+    padding: 12px;
+    background-color: #2f4f6f;
+    color: #ffffff;
+    font-size: 0.9em;
+    text-align: center;
+    grid-row: 3;  /* Third row for footer */
+}
+
+.card-footer div {
+    position: relative;
+    padding: 8px;
+}
+
+/* Add right border to each div except the last one */
+.card-footer div:not(:last-child) {
+    border-right: 1px solid #ffffff;  /* White line to match the text color */
+}
+
+.card-footer div span {
+    display: block;
+    font-weight: bold;
+}
+.title, .date, .description{ 
+    font-family: 'Roboto', sans-serif;  /* Apply Roboto specifically to title, date, and description */
+}
