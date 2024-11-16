@@ -241,3 +241,210 @@ footer {
     margin-top: 25px;
 }
 }
+/* Grid layout for second page sections */
+.page2-title {
+    font-size: 2.5em; /* Larger size for prominence */
+    font-weight: bold;
+    color: #4A4A8E; /* A soft purple tone to match the logo */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    text-align: center; /* Center-align the title */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#hero-msg {
+    background-color: rgba(74, 74, 142, 0.1); /* Subtle purple background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for modern feel */
+}
+.salmon-river h4 {
+    color: #EDDFEF;
+    font-size: 1.5em; /* Adjust font size as needed */
+    margin-bottom: 10px;
+    text-align: left; /* Ensure it's aligned properly */
+}
+
+.salmon-river img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.salmon-river p {
+    text-align: justify;
+    color: black;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Ensure layout takes effect properly */
+.page2-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /* 10 equal columns */
+    gap: 20px; /* Spacing between items */
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.salmon-river {
+    grid-column: 1 / 6; /* Take the first 5 columns */
+    grid-row: 1; /* First row */
+    background-color: #EDDFEF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+/* Desolation Canyon section */
+.grand-canyon {
+    grid-column: 6 / 11; /* Take the last 5 columns */
+    grid-row: 1; /* Align with Salmon River in first row */
+    background-color: #EDDFEF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+/* Grand Canyon section */
+.arizona {
+    grid-column: 2 / 10; /* Center in the layout */
+    grid-row: 2; /* Second row */
+    background-color: #EDDFEF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px #6f7364;
+    margin-top: 20px;
+}
+
+/* Images inside sections */
+main section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Adjust text alignment */
+main section h4, main section h5, main section h6 {
+    text-align: left;
+    color: #820263;
+    margin-bottom: 10px;
+}
+
+main section p {
+    text-align: justify;
+    color: black;
+    line-height: 1.6;
+}
+/* Navbar styling for page 2 */
+.page2 nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #4A4A8E;  /* Dark greenish shade to match theme */
+    padding: 10px 0;
+    border-radius: 10px;
+}
+/* Apply only to second page */
+.page2 .memories-section {
+    background-color: #4A4A8E; /* Your desired background color */
+    color: white; /* Ensure text stands out against the background */
+    padding: 20px; /* Optional: Add padding for spacing */
+    border-radius: 10px; /* Optional: Rounded corners for a modern look */
+}
+/* Navbar link styling */
+.page2 nav a {
+    font-size: 1.1em;
+    color: #820263;  /* Violet color for better visibility */
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 2px solid transparent;  /* Border to be added */
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    display: inline-block;  /* Ensures padding is applied around the text */
+}
+
+/* Hover effect for links */
+.page2 nav a:hover {
+    background-color: #820263;  /* Deep purple on hover to match theme */
+    color: #EDDFEF;  /* Light text for contrast */
+    border-color: #820263;  /* Violet border on hover */
+}
+
+/* Active link (highlighted) */
+.page2 nav a.active {
+    background-color: #820263;  /* Deep purple for active links */
+    color: #EDDFEF;  /* Light text for contrast */
+    font-weight: bold;  /* Bold text for active link */
+    border-color: #820263;  /* Violet border for active links */
+}
+
+/* Optional: Adjust active link color based on a more subtle theme */
+.page2 nav a.active:hover {
+    background-color: #6F1955;  /* Slightly darker shade on hover for active links */
+    color: #EDDFEF;  /* Keep light text color */
+    border-color: #6F1955;  /* Darker violet bor
+.page2 .book-now-section {
+    position: absolute; /* Positioning it at the bottom */
+    bottom: 20px; /* Distance from the bottom of the page */
+    width: 100%; /* Full width */
+    text-align: center; /* Center the button */
+    z-index: 1; /* Ensure it stays on top */
+}
+
+.page2 .book-now {
+    background-color: #4A4A8E; /* Match the purple theme for second page */
+    color: white; /* White text for contrast */
+    text-decoration: none;
+    font-size: 1.2em; /* Adjust font size */
+    padding: 15px 30px;
+    border-radius: 5px; /* Rounded corners */
+    display: inline-block; /* Ensures the button has padding */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for the button */
+.page2 .book-now:hover {
+    background-color: #820263; /* Darker purple on hover */
+    color: white; /* Keep text color white */
+}
+/* Media query for responsiveness */
+@media screen and (max-width: 900px) {
+    .page2-grid {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 15px;
+    }
+
+    .salmon-river, .grand-canyon, .arizona {
+        grid-column: 1; /* Take full width */
+        padding: 15px;
+    }
+    /* Styling for the "Book Now" button on mobile */
+    .page2 .book-now-section {
+        position: absolute; /* Positioning it at the bottom */
+        bottom: 20px; /* Distance from the bottom of the page */
+        width: 100%; /* Full width */
+        text-align: center; /* Center the button */
+        z-index: 1; /* Ensure it stays on top */
+    }
+
+    .page2 .book-now {
+        background-color: #4A4A8E; /* Match the purple theme for second page */
+        color: white; /* White text for contrast */
+        text-decoration: none;
+        font-size: 1em; /* Adjust font size */
+        padding: 10px 20px; /* Adjust padding for mobile */
+        border-radius: 5px; /* Rounded corners */
+        display: inline-block; /* Ensures the button has padding */
+        transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+    }
+
+    /* Hover effect for the button */
+    .page2 .book-now:hover {
+        background-color: #820263; /* Darker purple on hover */
+        color: white; /* Keep text color white */
+    }
+}
+}
