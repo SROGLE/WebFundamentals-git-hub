@@ -245,7 +245,7 @@ footer {
 .page2-title {
     font-size: 2.5em; /* Larger size for prominence */
     font-weight: bold;
-    color: #4A4A8E; /* A soft purple tone to match the logo */
+    color: #5d2f9f; /* A soft purple tone to match the logo */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
     text-align: center; /* Center-align the title */
     margin-top: 20px;
@@ -329,7 +329,7 @@ main section img {
 /* Adjust text alignment */
 main section h4, main section h5, main section h6 {
     text-align: left;
-    color: #820263;
+    color: #5d2f9f;
     margin-bottom: 10px;
 }
 
@@ -343,13 +343,13 @@ main section p {
     display: flex;
     justify-content: center;
     gap: 20px;
-    background-color: #4A4A8E;  /* Dark greenish shade to match theme */
+    background-color: #5d2f9f;  /* Dark greenish shade to match theme */
     padding: 10px 0;
     border-radius: 10px;
 }
 /* Apply only to second page */
 .page2 .memories-section {
-    background-color: #4A4A8E; /* Your desired background color */
+    background-color: #5d2f9f; /* Your desired background color */
     color: white; /* Ensure text stands out against the background */
     padding: 20px; /* Optional: Add padding for spacing */
     border-radius: 10px; /* Optional: Rounded corners for a modern look */
@@ -395,7 +395,7 @@ main section p {
 }
 
 .page2 .book-now {
-    background-color: #4A4A8E; /* Match the purple theme for second page */
+    background-color: #5d2f9f; /* Match the purple theme for second page */
     color: white; /* White text for contrast */
     text-decoration: none;
     font-size: 1.2em; /* Adjust font size */
@@ -410,6 +410,43 @@ main section p {
     background-color: #820263; /* Darker purple on hover */
     color: white; /* Keep text color white */
 }
+/* Book Now Section Styling */
+.book-now-section {
+    margin: 20px 0;
+    text-align: center; /* Center-align the content */
+}
+
+.book-now-section h2 {
+    font-size: 1.8em;
+    color: #2e6f9f; /* A nice color for the heading */
+    margin-bottom: 10px;
+}
+
+.book-now {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #2e6f9f; /* Match the heading color */
+    color: #fff;
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.book-now:hover {
+    background-color: #1a4e6f; /* Darker shade for hover effect */
+    transform: translateY(-3px); /* Slight lift effect */
+}
+
+.book-now:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 5px rgba(46, 111, 159, 0.8); /* Subtle focus outline */
+}
+
+.book-now:active {
+    background-color: #134e5b; /* Even darker shade on click */
+}
+
 /* Media query for responsiveness */
 @media screen and (max-width: 900px) {
     .page2-grid {
