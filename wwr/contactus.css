@@ -1,0 +1,136 @@
+/* General Styles for Contact Us Page */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1b2f; /* Deep dark purple */
+    color: #ffffff;
+}
+#back-to-home {
+    text-align: center;
+    margin: 10px 0;
+}
+
+#back-to-home a {
+    color: #ffffff;
+    background-color: #5a3e8e; /* Dark purple */
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#back-to-home a:hover {
+    background-color: #7a5fb3; /* Lighter purple */
+}
+
+
+/* Container Styling */
+.contact-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #272640; /* Dark purple container background */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    border: 1px solid #6c63ff; /* Accent border */
+}
+
+/* Header Styling */
+.contact-container h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #c4b5fd; /* Light purple for headers */
+    font-size: 2rem;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #d4d4ff; /* Softer purple for labels */
+}
+
+form input,
+form textarea {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #6c63ff; /* Accent border for inputs */
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #1f1e36; /* Slightly lighter than the page */
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #9a8cff; /* Focused border color */
+    outline: none;
+    box-shadow: 0 0 8px rgba(154, 140, 255, 0.8);
+}
+
+/* Textarea Styling */
+form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+/* Button Styling */
+form button {
+    padding: 12px 20px;
+    background-color: #6c63ff; /* Primary button color */
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background-color: #9a8cff; /* Lighter purple for hover effect */
+}
+
+/* Contact Information Section */
+.contact-info {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    color: #c4b5fd; /* Light purple for text */
+}
+
+.contact-info a {
+    color: #6c63ff; /* Link color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #9a8cff; /* Hover color for links */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .contact-container {
+        padding: 20px;
+    }
+
+    form input,
+    form textarea,
+    form button {
+        font-size: 14px;
+    }
+}
