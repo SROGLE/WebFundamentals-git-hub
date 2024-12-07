@@ -1,7 +1,7 @@
 /* Import Fonts */
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gowun+Batang:wght@400;700&family=MedievalSharp&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bilbo&family=Gowun+Batang:wght@400;700&family=MedievalSharp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bilbo&family=Gowun+Batang:wght@400;700&family=MedievalSharp&display=swap');
 
 /* Root Variables */
 :root {
@@ -19,7 +19,7 @@ body {
     font-family: 'Lato', sans-serif;
     color: var(--text-color);
     background-color: var(--background-color);
-    line-height: 1.6;
+    line-height: 1.8;
 }
 
 /* Title Styling */
@@ -132,7 +132,7 @@ main section {
 main section img {
     display: block;
     margin: 0 auto 15px auto;
-    max-width: 50%;  /* Adjust to your desired size, here 50% */
+    max-width: 50%;  /* Adjust to your desired size */
     height: auto;    /* Keeps the aspect ratio intact */
     border: 4px solid var(--accent1-color);
     border-radius: 8px;
@@ -165,23 +165,13 @@ main section h2 {
 }
 
 /* Witch-king and Khamûl Titles */
-main section h3.witchking-title {
-    color: var(--accent1-color);
+main section h3.witchking-title,
+main section h3.khamul-title {
     font-family: 'MedievalSharp', cursive;
     font-size: 2.4em;
     text-align: center;
+    color: var(--accent1-color);
     text-shadow: 2px 2px 5px var(--primary-color);
-}
-
-main section h3.khamul-title {
-    font-family: 'MedievalSharp', cursive; /* Use the same font family */
-    font-size: 2.4em;  /* Same font size as Witch-king */
-    text-align: center;
-    text-shadow: 2px 2px 5px var(--primary-color); /* Same text shadow as Witch-king */
-}
-
-main section h3.khamul-title {
-    color: var(--accent1-color); /* Same color as Witch-king */
 }
 
 /* Links */
